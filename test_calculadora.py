@@ -1,4 +1,3 @@
-import sys
 import pytest
 import numpy as np
 from calculadora import Calculadora
@@ -34,6 +33,16 @@ class TestCalculadora:
     @pytest.mark.skip(reason="Método ainda não implementado")
     def test_raiz(self, calc):
         numero = 4
+        esperado = np.sqrt(numero)
+        resultado = calc.raiz_quadrada(numero)
+        assert np.isclose(resultado, esperado)
+        
+        numero = 9
+        esperado = np.sqrt(numero)
+        resultado = calc.raiz_quadrada(numero)
+        assert np.isclose(resultado, esperado)
+        
+        numero = 49
         esperado = np.sqrt(numero)
         resultado = calc.raiz_quadrada(numero)
         assert np.isclose(resultado, esperado)
