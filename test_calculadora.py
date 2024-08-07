@@ -1,6 +1,10 @@
 import sys
 import pytest
 import numpy as np
+try:
+    import pandas as pd
+except ImportError:
+    pass
 from calculadora import Calculadora
 
 class TestCalculadora:
