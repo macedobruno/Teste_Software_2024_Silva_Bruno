@@ -8,6 +8,7 @@ A aplicação é uma calculadora com as operações básicas para demonstrar fun
 
 - Python 3 ou superior
 - pytest
+- numpy
 
 ## Instalação
 
